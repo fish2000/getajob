@@ -1,0 +1,20 @@
+This is a command-line script for getting a job. It's
+written in  Python, the preferred programming language
+of the unemployed. 
+
+Right now, it has options to search AuthenticJobs by
+keyword and location. Output can be piped to grep
+for filtering -- eventually it will look nice without
+having to do things like that.
+
+If you have urlview, it can cut through the bullshit
+and cull the URLs from your query's matched listings
+so as to display them to you legibly.
+
+It's PRE-ALPHA right now, which means it can't actually
+get you a job at the moment. Use at your own risk
+and enjoy. 
+
+Yes!
+
+-fish
