@@ -37,6 +37,10 @@ $ getajob --freelance design typography
 $ getajob --contract design typography
 # same work, different power dynamics
 
+$ getajob --apikey="lsdufliueglgersljhfgdsfjhg" design mobile
+# replace that gibberish with your AuthenticJobs API key,
+# if necessary
+
 $ getajob -u --city="new york" hiring
 # use urlview to show a straight-up list of those hiring
 # NB. hardcoded now to /opt/local/bin/urlview, sry
