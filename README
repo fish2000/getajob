@@ -1,20 +1,48 @@
-This is a command-line script for getting a job. It's
-written in  Python, the preferred programming language
-of the unemployed. 
+This is a command-line script for getting a job. It's written
+in Python, the preferred programming language of the unemployed. 
 
-Right now, it has options to search AuthenticJobs by
-keyword and location. Output can be piped to grep
-for filtering -- eventually it will look nice without
-having to do things like that.
+Right now, it has options to search AuthenticJobs by keyword
+and location. Output can be piped to grep for filtering --
+eventually it will look nice without having to do things
+like that.
 
-If you have urlview, it can cut through the bullshit
-and cull the URLs from your query's matched listings
-so as to display them to you legibly.
+If you have urlview, it can cut through the bullshit and cull
+the URLs from your query's matched listings so as to display them
+to you legibly.
+
+Here is how that works.
+
+SETUP:
+$ chmod +x /path/to/getajob.py
+$ edit /path/to/getajob.py   # put in your API key
+$ alias getajob='/path/to/getajob.py'
+
+SEARCH:
+$ getajob design mobile
+# go after the Angry Birds market
+
+$ getajob --state="ny" web
+# I'd work upstate again but I'd also take bklyn
+
+$ getajob --city="los angeles" "art direction" 
+# move out west and start over
+# TODO: boolean queries, so a '!porn' arg or some other such operator
+# could be used to clarify the above.
+
+$ getajob --find="\d\d\d\,?\d\d\d" finance
+# use regexes to ensure that you'll get a six-figure salary
+
+$ getajob --full-time design typography
+$ getajob --freelance design typography
+$ getajob --contract design typography
+# same work, different power dynamics
+
+$ getajob -u --city="new york" hiring
+# use urlview to show a straight-up list of those hiring
+# NB. hardcoded now to /opt/local/bin/urlview, sry
 
 It's PRE-ALPHA right now, which means it can't actually
-get you a job at the moment. Use at your own risk
-and enjoy. 
-
-Yes!
+get you a job at the moment. We are not responsible for
+you -- use at your own risk and enjoy! Yes. 
 
 -fish
